@@ -1,0 +1,433 @@
+/*Fonts <---> start*/
+@font-face {
+    font-family: 'Visby Round CF';
+    src: url('../fonts/VisbyRoundCF-Regular.eot');
+    src: url('../fonts/VisbyRoundCF-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/VisbyRoundCF-Regular.woff2') format('woff2'),
+    url('../fonts/VisbyRoundCF-Regular.woff') format('woff'),
+    url('../fonts/VisbyRoundCF-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Visby Round CF';
+    src: url('../fonts/VisbyRoundCF-Bold.eot');
+    src: url('../fonts/VisbyRoundCF-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/VisbyRoundCF-Bold.woff2') format('woff2'),
+    url('../fonts/VisbyRoundCF-Bold.woff') format('woff'),
+    url('../fonts/VisbyRoundCF-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*Fonts >---< end*/
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a,
+button {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+input {
+    outline: none;
+}
+li {
+    list-style: none;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #051937;
+    background-image: linear-gradient(to right top, #130f40, #1b165a, #241d74, #2d2490, #382bad, #4a2ebb, #5b31c9, #6d33d7, #8432d9, #9831db, #ac2fdc, #be2edd);
+    font-family: 'Visby Round CF';
+    color: white;
+}
+
+.wrapper {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20%;
+}
+
+h1 {
+    margin: 0 auto 40px;
+    font-size: 2.4em;
+    text-shadow: 2px 3px 0px #898999;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main_container a,
+.form_container form input[type="submit"],
+.form_create_group_container > form > button,
+.form_add_user_group_container a,
+.form_add_user_group_container > .hidden-block > form button,
+.message_to_admin_container > form button {
+    padding: 20px 45px;
+    display: block;
+    border-radius: 30px;
+    background-color: #051937;
+    box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);
+    letter-spacing: 1.1px;
+    transition: .2s all ease-in-out;
+}
+
+.main_container a:hover,
+.form_container form input[type="submit"]:hover,
+.form_create_group_container > form >  button:hover,
+.form_add_user_group_container a:hover,
+.form_add_user_group_container > .hidden-block > form button:hover,
+.message_to_admin_container > form button:hover {
+    background-color: #130f40;
+}
+
+.form_container {
+    padding-top: 15%;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+.form_container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_container form input[type="text"],
+.form_container form input[type="password"] {
+    width: 100%;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 35px;
+    border: none;
+    margin-bottom: 20px;
+    max-width: 350px;
+    box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);
+    font-size: 20px;
+}
+
+.form_container form input[type="submit"],
+.form_create_group_container > form > button {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 35px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.errorLogin {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.errorLogin > span {
+    margin-bottom: 8px;
+}
+
+.errorLogin > span > img {
+    max-width: 26px;
+    width: 100%;
+    vertical-align: text-top;
+    margin-right: 10px;
+}
+
+.errorLogin > span.reason_error {
+    text-shadow: 1px 1.5px 0px red;
+    font-weight: bold;
+}
+
+.header_container {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_container > .left_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.header_container > .left_block > a:not(:last-child) {
+    margin-right: 20px;
+}
+
+.header_container a {
+    font-size: 22px;
+    transition: .2s all ease;
+}
+
+.header_container a:hover,
+a.registrate:hover {
+    text-shadow: 2px 1px 0 #898999;
+}
+
+header {
+    background-color: rgba(0,0,0,0.4);
+}
+
+.chat_container {
+    margin-top: 40px;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);
+}
+
+.chat_container .chatroom {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+}
+
+.chatroom .message_container {
+    height: 480px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.chatroom .message_container p {
+    margin-bottom: 5px;
+}
+
+.chatroom .message_form_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.chatroom .message_form_container textarea,
+.message_to_admin_container textarea {
+    padding: 10px;
+    resize: none;
+    max-width: 780px;
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+}
+
+.message_to_admin_container textarea {
+    height: 150px;
+    margin-bottom: 40px;
+    max-width: 480px;
+}
+
+.chatroom .message_form_container button {
+    padding: 10px 12px;
+    max-width: 60px;
+    border-radius: 50%;
+    background-color: #6d33d7;
+    opacity: 0.8;
+    transition: .2s all ease-in-out;
+}
+
+.chatroom .message_form_container button:hover {
+    opacity: 1;
+}
+
+.chatroom .message_form_container button img {
+    max-width: 100%;
+}
+.chat_container .chat_users {
+    max-width: 260px;
+    width: 100%;
+    padding: 20px;
+}
+
+.chat_container .chat_users h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.chat_container .chat_users ul {
+    max-height: 300px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.chat_container .chat_users ul:first-child {
+    max-height: 150px;
+}
+
+.chat_container .chat_users ul::-webkit-scrollbar,
+.chatroom .message_container::-webkit-scrollbar,
+.admin_container > div > ul::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+    -webkit-border-radius: 5px;
+}
+
+.chat_container .chat_users ul::-webkit-scrollbar-thumb,
+.chatroom .message_container::-webkit-scrollbar-thumb,
+.admin_container > div > ul::-webkit-scrollbar-thumb {
+    background-color:#6d33d7;
+    -webkit-border-radius: 5px;
+}
+
+
+.chat_container .chat_users ul li {
+    margin-bottom: 5px;
+}
+
+._403_container h1{
+    margin-top: 50px;
+}
+
+a.registrate {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form_create_group_container,
+.form_add_user_group_container,
+.message_to_admin_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+.form_create_group_container > form,
+.message_to_admin_container > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form_create_group_container > form > input {
+    border: none;
+    max-width: 300px;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);
+    letter-spacing: 1.1px;
+    text-align: center;
+}
+
+.form_create_group_container > form > button,
+.form_add_user_group_container > .hidden-block > form button {
+    max-width: 250px;
+}
+
+.form_add_user_group_container {
+    margin-top: 5%;
+}
+.form_add_user_group_container > .choose_action {
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form_add_user_group_container > .choose_action  > a:first-child {
+    margin-right: 20px;
+}
+
+.form_add_user_group_container > .hidden-block {
+    width: 100%;
+}
+
+.form_add_user_group_container > .hidden-block > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form_add_user_group_container > .hidden-block > form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.form_add_user_group_container > .hidden-block > form > div > select {
+    max-width: 300px;
+    width: 100%;
+
+}
+
+.form_add_user_group_container > .hidden-block > form > div > select:first-child {
+    margin-right: 20px;
+}
+
+.admin_container {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.admin_container .active_users {
+    margin-right: 100px;
+}
+.admin_container > div > ul {
+    max-height: 500px;
+    overflow: auto;
+}
+
+.admin_container > div > ul > li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.admin_container > div > ul > li > form button {
+    max-width: 30px;
+    padding: 2px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.admin_container > div > ul > li > form button > img {
+    width: 100%;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Русская рыбалка</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/source.js"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<!-- INCLUDE _menu.html -->
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+        var block = document.getElementById("response");
+        block.scrollTop = block.scrollHeight;
+    });
+</script>
+
+<div class="main">
+    <div class="wrapper">
+        <div class="chat_container">
+            <div class="chatroom">
+                <div class="message_container" id="response">
+                </div>
+                <div class="message_form_container">
+                    <input type="text" name="chat_message" id="chat_message" hidden/>
+                    <input type="text" name="username_message" id="username_message" hidden/>
+                    <textarea name="content_message" id="content_message" placeholder="Message content here..."
+                              required></textarea>
+                    <button onclick="sendMessage();"><img th:src="@{/images/send.png}" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
