@@ -1,5 +1,6 @@
 package com.russianfishing.net;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -9,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.validation.constraints.NotNull;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 @Controller
 public class MainController {
 
@@ -29,9 +33,9 @@ public class MainController {
         return "index";
     }
 
-    @RequestMapping(value = "/chatroom", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/chatroom", method = RequestMethod.POST, produces = MediaType.TEXT_PLAIN_VALUE)
     @ResponseBody
-    public String getMessage(@RequestBody Message message) {
-        return service.execute(message.getText());
+    public String getMessage(@RequestBody String message) {
+        return service.execute(message);
     }
 }

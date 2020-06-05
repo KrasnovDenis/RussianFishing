@@ -2,15 +2,18 @@
 function sendMessage() {
     var content = jQuery('#content_message')[0].value;
     drawMessage('Вы', content);
-    $.ajax({
-        url: "http://localhost:8080/net_war/chatroom",
-        type: 'post',
-        dataType: 'json',
-        contentType: 'application/json',
-        data: JSON.stringify( { 'message' : content}),
+    var settings = {
+        "url": "http://localhost:8080/net_war/chatroom",
+        "method": "POST",
+        "timeout": 0,
+        "headers": {
+            "Content-Type": "text/plain"
+        },
+        "data": content,
+    };
 
-    }).done(function (data) {
-        drawMessage('Денис', data);
+    $.ajax(settings).done(function (response) {
+        drawMessage('Лизка', response);
     });
 }
 
