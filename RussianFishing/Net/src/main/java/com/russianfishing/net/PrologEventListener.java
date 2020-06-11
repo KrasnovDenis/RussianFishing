@@ -2,6 +2,9 @@ package com.russianfishing.net;
 
 import com.ugos.jiprolog.engine.*;
 
+import java.io.File;
+import java.io.IOException;
+
 public class PrologEventListener implements JIPEventListener {
     private final PrologProcessor processor;
     private int m_nQueryHandle;
@@ -36,8 +39,9 @@ public class PrologEventListener implements JIPEventListener {
 
         // consult file
         try {
+            File file = new File(getClass().getResource("/prolog/eliza.pl").getFile());
             // consult file
-            jip.consultFile("C:\\Users\\KPACHOB\\IdeaProjects\\RussianFishing\\RussianFishing\\Net\\src\\main\\resources\\prolog\\eliza.pl");
+            jip.consultFile(file.getAbsolutePath());
         } catch (JIPSyntaxErrorException ex) {
             ex.printStackTrace();
         }
