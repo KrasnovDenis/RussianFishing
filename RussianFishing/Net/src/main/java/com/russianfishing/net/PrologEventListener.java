@@ -3,12 +3,11 @@ package com.russianfishing.net;
 import com.ugos.jiprolog.engine.*;
 
 import java.io.File;
-import java.io.IOException;
 
 public class PrologEventListener implements JIPEventListener {
     private final PrologProcessor processor;
     private int m_nQueryHandle;
-    private boolean end = false;
+    private final boolean end = false;
 
     PrologEventListener(PrologProcessor processor) {
         this.processor = processor;
