@@ -37,7 +37,7 @@ public class PrologEventListener implements JIPEventListener {
         // consult file
         try {
             // consult file
-            jip.consultFile("C:\\Users\\KPACHOB\\Desktop\\RussianFishing\\RussianFishing\\Net\\src\\main\\resources\\prolog\\eliza.pl");
+            jip.consultFile("C:\\Users\\KPACHOB\\IdeaProjects\\RussianFishing\\RussianFishing\\Net\\src\\main\\resources\\prolog\\eliza.pl");
         } catch (JIPSyntaxErrorException ex) {
             ex.printStackTrace();
         }
@@ -46,7 +46,8 @@ public class PrologEventListener implements JIPEventListener {
 
         // parse query
         try {
-            query = jip.getTermParser().parseTerm("father(X," + request + ").");
+            request = request.toLowerCase();
+            query = jip.getTermParser().parseTerm("eliza(\"" + request + "\", X)." );
         } catch (JIPSyntaxErrorException ex) {
             ex.printStackTrace();
             System.exit(0);
