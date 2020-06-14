@@ -12,10 +12,6 @@ function sendMessage() {
     };
 
     $.ajax(settings).done(function (response) {
-        response = response.replace(/\s+/g, ' ').trim()
-            .split(',').join(" ").slice(5, -1).trim()
-            .replace('[','');
-
         drawMessage('Лизка', response);
     });
 }
@@ -25,3 +21,6 @@ function drawMessage(user, message) {
     jQuery(".message_container").append(messageToAppend);
 }
 
+window.onload = function () {
+    drawMessage("Лизка", "Здравствуйте, меня зовут Лизка я начинающая рыбачка :) Что вы думаете о рыбалке?");
+};

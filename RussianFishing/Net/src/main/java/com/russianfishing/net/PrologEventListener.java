@@ -15,31 +15,27 @@ public class PrologEventListener implements JIPEventListener {
 
     @Override
     public void solutionNotified(JIPEvent jipEvent) {
-        String res = "";
+        StringBuilder res = new StringBuilder();
         synchronized (jipEvent.getSource()) {
             JIPTerm solution = jipEvent.getTerm();
             JIPVariable[] vars = solution.getVariables();
             for (JIPVariable var : vars) {
                 if (!var.isAnonymous()) {
-                    res = res + (var.getName() + " = " + var.toString(jipEvent.getSource()) + " ") + '\n';
+                    res.append(var.toString(jipEvent.getSource())).append('\n');
                 }
             }
-            processor.setAnswer(res);
+            processor.setAnswer(TranslateUtils.clean(res.toString()));
             jipEvent.getSource().nextSolution(jipEvent.getQueryHandle());
         }
     }
 
     public synchronized void start(String request) {
-        // New instance of prolog engine
         JIPEngine jip = new JIPEngine();
 
-        // add listeners
         jip.addEventListener(this);
 
-        // consult file
         try {
-            File file = new File(getClass().getResource("/prolog/eliza.pl").getFile());
-            // consult file
+            File file = new File(getClass().getResource("/prolog/test.pl").getFile());
             jip.consultFile(file.getAbsolutePath());
         } catch (JIPSyntaxErrorException ex) {
             ex.printStackTrace();
@@ -47,20 +43,15 @@ public class PrologEventListener implements JIPEventListener {
 
         JIPTerm query = null;
 
-        // parse query
         try {
-            request = request.toLowerCase();
+            request = TranslateUtils.translateToLatin(request.toLowerCase());
             query = jip.getTermParser().parseTerm("eliza(\"" + request + "\", X)." );
         } catch (JIPSyntaxErrorException ex) {
             ex.printStackTrace();
             System.exit(0);
         }
 
-        // open Query
         synchronized (jip) {
-            // It's better to have the first call under syncronization
-            // to avoid that listeners is called before the method
-            // openQuery returns the handle.
             m_nQueryHandle = jip.openQuery(query);
         }
 
