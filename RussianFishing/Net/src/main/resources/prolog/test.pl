@@ -479,8 +479,43 @@ sr([ispug|X],[strakh|Y],X,Y).
 sr([zmei|X],[strakh|Y],X,Y).
 sr([pauki|X],[strakh|Y],X,Y).
 sr([dikiy|X],[strakh|Y],X,Y).
-sr([dikie|X],[strakh|Y],X,Y).
-
+sr([ladno|X],[okey|Y],X,Y).
+sr([davay|X],[okey|Y],X,Y).
+sr([ona|X],[on|Y],X,Y).
+sr([ono|X],[on|Y],X,Y).
+sr([nedostatochno|X],[malo|Y],X,Y).
+sr([mnogo|X],[malo|Y],X,Y).
+sr([nenavizhu|X],[ljublju|Y],X,Y).
+sr([predpochitaju|X],[ljublju|Y],X,Y).
+sr([normaljhno|X],[ljublju|Y],X,Y).
+sr([plokho|X],[ljublju|Y],X,Y).
+sr([otlichno|X],[ljublju|Y],X,Y).
+sr([super|X],[ljublju|Y],X,Y).
+sr([klassno|X],[ljublju|Y],X,Y).
+sr([velikolepno|X],[ljublju|Y],X,Y).
+sr([somniteljhno|X],[ljublju|Y],X,Y).
+sr([luchshe|X],[ljublju|Y],X,Y).
+sr([khuzhe|X],[ljublju|Y],X,Y).
+sr([zdravstvuy|X],[privet|Y],X,Y).
+sr([zdravstvuyte|X],[privet|Y],X,Y).
+sr([privetstvuju|X],[privet|Y],X,Y).
+sr([moy|X],[on|Y],X,Y).
+sr([tvoy|X],[on|Y],X,Y).
+sr([nash|X],[on|Y],X,Y).
+sr([vash|X],[on|Y],X,Y).
+sr([ikh|X],[on|Y],X,Y).
+sr([kurica|X],[mjaso|Y],X,Y).
+sr([svinina|X],[mjaso|Y],X,Y).
+sr([govjadina|X],[mjaso|Y],X,Y).
+sr([baranina|X],[mjaso|Y],X,Y).
+sr([karasjh|X],[rihba|Y],X,Y).
+sr([lososjh|X],[rihba|Y],X,Y).
+sr([foreljh|X],[rihba|Y],X,Y).
+sr([treska|X],[rihba|Y],X,Y).
+sr([okunjh|X],[rihba|Y],X,Y).
+sr([vkusno|X],[eda|Y],X,Y).
+sr([appetitno|X],[eda|Y],X,Y).
+sr([sochno|X],[eda|Y],X,Y).
 
 
 :- dynamic(rules/1).
@@ -797,10 +832,46 @@ rules([[blagotvoriteljhnostjh,1],[
 		[lichno,ja,schitaju,spravedlivoy,pogovorku,ne,davay,golodajushhemu,rihbu,',',day,emu,udochku,',',pochemu,vih,ne,soglasnih,ili,soglasnih,'?'],
         [pomogatjh,obezdolennihm,ehto,vesjhma,blagorodno,',',vih,kak,to,pomogaete,'?']]]]).
 
+rules([[net,0],[
+	[1,[_],0,
+	    [i, dont, got, you]]]]).
+
+rules([[proshhayte,9],[
+	[1,[_],0,
+	    [spasibo, za, dialog, uvidimsja, pozzhe]]]]).
+
+rules([[prosto,0],[
+	[1,[_],0,
+	    [net, ehto, ne, prostoy, vopros]]]]).
+
+rules([[znaju,0],[
+	[1,[_],0,
+	    [ladno, a, chto, vih, eshhe, znaete, pro, rihbalku, '?']]]]).
+
+rules([[okey,0],[
+	[1,[_],0,
+	    [khorosho, a, chto, vih, eshhe, znaete, o, rihbalke, '?']]]]).
+
+rules([[malo,0],[
+	[1,[_],0,
+	    [khm, a, davayte, ja, vam, rasskazhu, o, rihbalke, '?', chto, vih, khoteli, bih, uznatjh, '?']]]]).
+
+rules([[ljublju,0],[
+	[1,[_],0,
+	    [ot, chego, zhe, '?']]]]).
+
+rules([[on,0],[
+	[1,[_],0,
+		[o, kom, idet, rechjh, '?']]]]).
+
 rules([[memory,0],[
 	[1,[_],0,
-		[не, поняла, повторите, погромче]]]]).
+		[ne, ponjala, povtorite, pogromche]]]]).
 
 rules([[none,0],[
 	[1,[_],0,
-	    [i, dont, got, you]]]]).
+        [nichego, ne, ponimaju]]]]).
+
+rules([[privet,0],[
+	[1,[_],0,
+        [privet, chto, dumaeshjh, o, rihbalke, '?']]]]).

@@ -1,3 +1,10 @@
+var botName = "Лизка";
+
+window.onload = function () {
+    drawMessage(botName, "Здравствуйте, меня зовут " + botName + " я начинающая рыбачка :) Что вы думаете о рыбалке?");
+
+};
+
 function sendMessage() {
     var content = jQuery('#content_message')[0].value;
     drawMessage('Вы', content);
@@ -12,15 +19,16 @@ function sendMessage() {
     };
 
     $.ajax(settings).done(function (response) {
-        drawMessage('Лизка', response);
+        drawMessage(botName, response);
     });
 }
 
 function drawMessage(user, message) {
-    var messageToAppend = '<div>' + user + ': ' + message + '</div>';
+    var style = 'style = "width: 500px;"';
+    if (user === botName) {
+        style = 'style = "width: 500px; margin-left : 50%;"';
+    }
+    var messageToAppend = '<div ' + style + ' >' + user + ': ' + message + '</div>';
     jQuery(".message_container").append(messageToAppend);
-}
 
-window.onload = function () {
-    drawMessage("Лизка", "Здравствуйте, меня зовут Лизка я начинающая рыбачка :) Что вы думаете о рыбалке?");
-};
+}

@@ -12,26 +12,14 @@ public class TranslateUtils {
         StringBuilder answer = new StringBuilder();
 
         for (String i : list) {
-//            try {
-//                int character = Integer.parseInt(i);
-//                if (character == 32) {
-//                    character = 160;
-//                }
-//                if (isRussianLetter(character)) {
-//                        answer.append(Character.valueOf((char) (character + RUSSIAN_DOWN_UTF)));
-//                } else {
-                answer.append(i).append(" ");
-//                }
-//            } catch (NumberFormatException e) {
-//                e.printStackTrace();
-//            }
+            answer.append(i).append(" ");
         }
         return translateToRussian(restorationSpaces(answer.toString()));
     }
 
     /*НИКОГДА НЕ ДЕЛАЙТЕ ТАК ВЕСЬ КОД В ЭТОМ КЛАССЕ ПРОКЛЯТ*/
     public static String restorationSpaces(String s) {
-        return s.substring(0,1) + s.substring(1).replace("Р", " ");
+        return s.substring(0, 1) + s.substring(1).replace("Р", " ");
     }
 
     public static String translateToRussian(String s) {

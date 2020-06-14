@@ -43,6 +43,7 @@ button {
 input {
     outline: none;
 }
+
 li {
     list-style: none;
 }
@@ -89,14 +90,14 @@ h1 {
     display: block;
     border-radius: 30px;
     background-color: #051937;
-    box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);
+    box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.2);
     letter-spacing: 1.1px;
     transition: .2s all ease-in-out;
 }
 
 .main_container a:hover,
 .form_container form input[type="submit"]:hover,
-.form_create_group_container > form >  button:hover,
+.form_create_group_container > form > button:hover,
 .form_add_user_group_container a:hover,
 .form_add_user_group_container > .hidden-block > form button:hover,
 .message_to_admin_container > form button:hover {
@@ -125,7 +126,7 @@ h1 {
     border: none;
     margin-bottom: 20px;
     max-width: 350px;
-    box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);
+    box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.2);
     font-size: 20px;
 }
 
@@ -194,21 +195,21 @@ a.registrate:hover {
 }
 
 header {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .chat_container {
     margin-top: 40px;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);
+    box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.2);
 }
 
 .chat_container .chatroom {
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -238,7 +239,7 @@ header {
 .message_to_admin_container textarea {
     padding: 10px;
     resize: none;
-    max-width: 780px;
+    max-width: 900px;
     width: 100%;
     height: 60px;
     font-size: 16px;
@@ -266,6 +267,7 @@ header {
 .chatroom .message_form_container button img {
     max-width: 100%;
 }
+
 .chat_container .chat_users {
     max-width: 260px;
     width: 100%;
@@ -299,7 +301,7 @@ header {
 .chat_container .chat_users ul::-webkit-scrollbar-thumb,
 .chatroom .message_container::-webkit-scrollbar-thumb,
 .admin_container > div > ul::-webkit-scrollbar-thumb {
-    background-color:#6d33d7;
+    background-color: #6d33d7;
     -webkit-border-radius: 5px;
 }
 
@@ -308,7 +310,7 @@ header {
     margin-bottom: 5px;
 }
 
-._403_container h1{
+._403_container h1 {
     margin-top: 50px;
 }
 
@@ -343,7 +345,7 @@ a.registrate {
     padding: 10px 15px;
     font-size: 20px;
     border-radius: 30px;
-    box-shadow: 10px 10px 14px 1px rgba(00,00,00,0.2);
+    box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.2);
     letter-spacing: 1.1px;
     text-align: center;
 }
@@ -356,6 +358,7 @@ a.registrate {
 .form_add_user_group_container {
     margin-top: 5%;
 }
+
 .form_add_user_group_container > .choose_action {
     margin-bottom: 2%;
     display: flex;
@@ -363,7 +366,7 @@ a.registrate {
     justify-content: center;
 }
 
-.form_add_user_group_container > .choose_action  > a:first-child {
+.form_add_user_group_container > .choose_action > a:first-child {
     margin-right: 20px;
 }
 
@@ -408,6 +411,7 @@ a.registrate {
 .admin_container .active_users {
     margin-right: 100px;
 }
+
 .admin_container > div > ul {
     max-height: 500px;
     overflow: auto;
@@ -430,4 +434,31 @@ a.registrate {
 
 .admin_container > div > ul > li > form button > img {
     width: 100%;
+}
+
+.main {
+    height: 657px;!important;
+}
+
+.chat_container {
+    margin-top: 20px;
+    width: 1100px;  !important;
+    margin-left: 4%;
+
+}
+
+.message_container{
+    width: 1000px;
+}
+.message_container > div {
+    padding: 10px;
+    background: linear-gradient(to right, #4a2ebb, #6d33d7, #9831db);
+    border: 1px solid ivory;
+    border-radius: 25px/30px;
+    margin-top: 7px ;
+    margin-left: 10px;
+}
+
+.message_form_container {
+    width: 1000px;!important;
 }
