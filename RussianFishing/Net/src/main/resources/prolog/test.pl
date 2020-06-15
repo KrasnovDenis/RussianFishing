@@ -571,7 +571,7 @@ rules([[kotelok,1],[
 	[1,[_],0,
 	    [kotelok,mmm,ja,ljublju,pishhu,prigotovlennuju,na,otkrihtom,ogne,',',tem,bolee,',',chto,ona,poleznee,',',a,vih,chto,dumaete,ob,ehtom,'?']]]]).
 
-rules([[pokhod,1],[
+rules([[pokhod,2],[
 	[1,[_],0,
 	    [mnogie,ljubjat,pokhodih,na,prirodu,imenno,za,polevuju,kukhnju,',',khodjat,mnogie,sporih,o,vkusnote,i,poleznosti,pishhi,',',prigotovlennoy,na,ogne,',',kakova,vasha,pozicija,'?']]]]).
 
@@ -590,7 +590,7 @@ rules([[koster,2],[
 	    [s,chem,u,vas,associiruetsja,koster,'?'],
         [kakie,mihsli,ili,zhelanija,u,vas,voznikajut,sidja,u,kostra,'?']]]]).
 
-rules([[belok,1],[
+rules([[belok,2],[
 	[1,[_],0,
 		[belok,-,ehto,nash,stroiteljhnihy,material,',',kak,govoritsja,a,gde,on,soderzhitsja,v,boljhshom,kolichestve,'?']]]]).
 
@@ -603,19 +603,19 @@ rules([[zhir,2],[
 		[zachem,organizmu,vitaminih,'?'],
         [rihbiy,zhir,lekarstvo,nomer, odin,dlja,profilaktiki,prostudih,kakoe,vashe,otnoshenie,k,rihbjhemu,zhiru,'?']]]]).
 
-rules([[kosti,10],[
+rules([[kosti,2],[
 	[1,[_],0,
 		[kostochki,odna,iz,prichin,ne,estjh,rihbu,',',osobenno,detjam,i,sobakam,oni,mogut,podavitjhsja,!,zachem,voobshhe,estjh,rihbu,esli,ona,takaja,opasnaja,'?']]]]).
 
-rules([[komarih,1],[
+rules([[komarih,2],[
 	[1,[_],0,
 		[komarih,ehto,zhutjh,ne,ljublju,ikh,kak,vih,boritesjh,s,nimi,'?']]]]).
 
-rules([[sprey,1],[
+rules([[sprey,2],[
 	[1,[_],0,
 	[aehrozoljhnihe,sprei,sposobstvujut,razrusheniju,ozonovogo,sloja,zemli,',',kak,vih,dumaete,ehta,problema,razduta,',',ili,deystviteljhno,ochenjh,vazhna,'?']]]]).
 
-rules([[vremja,4],[
+rules([[vremja,2],[
 	[1,[_],0,
 		[ja,uveren,',',chto,',',poroy,',',mozhno,vihdelitjh,denjh,na,otdihkh,na,prirode,',',osobenno,kogda,sezon,',',vih,vihdeljaete,vremja,na,otdihkh,na,prirode,'?'],
         [kak,vih,dumaete,kak,izmenjaetsja,klev,v,techenii,goda,'?'],
@@ -623,36 +623,36 @@ rules([[vremja,4],[
         [delu,vremja,',',potekhe,chas,otdihkh,vazhen,'?',kak,vih,schitaete,'?']]]]).
 
 
-rules([[okhota,1],[
+rules([[okhota,2],[
 	[1,[_],0,
 		[ja,okhotitjhsja,ne,ljublju,',',zhalko,ubivatjh,zhivotnihkh,',',a,vih,kak,k,ehtomu,otnositesjh,'?']]]]).
 
-rules([[sezon,1],[
+rules([[sezon,2],[
 	[1,[_],0,
 		[kstati,',',naschet,sezona,pochemu,neljhzja,lovitjh,rihbu,vesnoy,'?']]]]).
 
-rules([[khobbi,2],[
+rules([[khobbi,3],[
 	[1,[_],0,
 		[na,vash,vzgljad,rihbalka,ehto,khoroshee,khobbi,i,pochemu,'?'],
         [kak,vih,razvlekaetesjh,na,prirode,'?']]]]).
 
-rules([[boloto,1],[
+rules([[boloto,2],[
 	[1,[_],0,
 		[ja,znaju,',',chto,v,bolote,nikto,ne,obitaet,',',inache,ehto,ozero,',',tam,rihbachitjh,bessmihslenno,rasskazhite,pro,vashi,poezdki,na,'?']]]]).
 
-rules([[kilogramm,1],[
+rules([[kilogramm,2],[
 	[1,[_],0,
 		[ogo,',',kakoy,ogromnihy,',',chto,potom,bihlo,'?']]]]).
-rules([[pomoshhjh,1],[
+rules([[pomoshhjh,2],[
 	[1,[_],0,
 		[vih,kogda-nibudjh,terjalisjh,v,lesu,'?',esli,da,',',to,rasskazhite,kak,vihbralisjh,'?']]]]).
 
-rules([[selo,2],[
+rules([[selo,3],[
 	[1,[_],0,
 		[vih,chasto,vihezzhaete,za,gorod,'?'],
         [chto,obihchno,delaete,za,predelami,goroda,'?']]]]).
 
-rules([[dacha,1],[
+rules([[dacha,2],[
 	[1,[_],0,
         [chto,vih,delaete,na,dache,'?'],
         [obihchno,ljudi,ljubjat,uedinitjhsja,podaljhshe,ot,gorodskoy,suetih,na,dache,',',chto,dvizhet,vami,'?']]]]).
@@ -675,11 +675,11 @@ rules([[sport,3],[
 		[pochemu,vazhno,zanimatjhsja,sportom,'?',estjh,mnenie,',',chto,ehto,atavizm]]]]).
 
 
-rules([[kholod,3],[
+rules([[kholod,2],[
 	[1,[_],0,
 	[ne,ljublju,kholod,',',mozhno,zaprosto,zaboletjh,',',da,i,rihbachitjh,neudobno,',',vih,kak,schitaete,'?']]]]).
 
-rules([[pticih,1],[
+rules([[pticih,2],[
 	[1,[_],0,
 	[kak,vih,otnositesjh,k,peniju,ptic,'?']]]]).
 
@@ -692,15 +692,15 @@ rules([[ucheba,2],[
         [esli,vih,ljubite,rihbachitjh,',',to,rasskazhite,o,vashem,pervom,opihte],
         [kak,vih,nauchilisjh,rihbachitjh,'?']]]]).
 
-rules([[grib,3],[
+rules([[grib,2],[
 	[1,[_],0,
 		[poroy,ja,ljublju,proguljatjhsja,v,lesu,sobiraja,gribih,a,vih,'?']]]]).
 
-rules([[strakh,1],[
+rules([[strakh,2],[
 	[1,[_],0,
 		[esli,u,vas,estjh,strakhi,svjazannihe,s,rihbalkoy,',',ili,v,celom,vihkhodom,na,prirodu,',',opishite,ikh]]]]).
 
-rules([[opasnostjh,1],[
+rules([[opasnostjh,3],[
 	[1,[_],0,
 		[kakie,opasnosti,tait,les,'?',chego,stoit,opasatjhsja,'?'],
         [kak,izbezhatjh,neprijatnostey,v,lesu,'?']]]]).
@@ -711,17 +711,17 @@ rules([[eda,5],[
         [pochemu,vazhno,sobljudatjh,zdorovoe,pitanie,'?'],
         [estjh,takoy,podkhod,k,pitaniju,moy,organizm,ne,pomoyka,',',chto,vih,slihshali,o,nem,'?']]]]).
 
-rules([[vegetarianstvo,1],[
+rules([[vegetarianstvo,3],[
 	[1,[_],0,
 		[chto,dumaete,o,vegetariancakh,'?'],
         [pochemu,vegetariancih,ne,edjat,mjaso,'?'],
         [kak,vih,dumaete,',',vegetariancih,poluchajut,vse,poleznihe,veshhestva,bez,mjasa,'?']]]]).
 
-rules([[rihbak,1],[
+rules([[rihbak,2],[
 	[1,[_],0,
 		[u,vas,mnogo,znakovihkh,rihbolovov,'?']]]]).
 
-rules([[klev,3],[
+rules([[klev,2],[
 	[1,[_],0,
 		[kak,dumaete,',',chto,pomogaet,dobitjhsja,khoroshego,kleva,'?']]]]).
 
@@ -729,110 +729,110 @@ rules([[prikormka,2],[
 	[1,[_],0,
 		[kak,vih,dumaete,zachem,nuzhna,prikormka,v,rihbnoy,lovle,'?']]]]).
 
-rules([[primanka,3],[
+rules([[primanka,2],[
 	[1,[_],0,
 		[sushhestvuet,ogromnoe,kolichestvo,sposobov,primanitjh,rihbu,',',kakie,po,vashemu,mneniju,sposobih,primanitjh,rihbu,'?']]]]).
 
-rules([[rihbalka,4],[
+rules([[rihbalka,2],[
 	[1,[_],0,
 		[dlja,menja,slovo,rihbalka,sinonim,slova,spokoystvie,',',rihbalka,pomogaet,rasslabitjhsja,'?']]]]).
 
 
-rules([[lovushka,1],[
+rules([[lovushka,2],[
 	[1,[_],0,
 	[estjh,takaja,poslovica,rihbaka,setjh,kormit],
     [v,rihbnoy,lovle,estjh,kucha,lovushek,',',kak,dumaete,kakoy,u,nikh,princip,'?']]]]).
 
-rules([[vihlovitjh,1],[
+rules([[vihlovitjh,2],[
 	[1,[_],0,
 		[esli,vih,novichok,',',to,ochenjh,vazhno,nauchitjhsja,podsekatjh,rihbu,',',kak,vih,dumaete,pochemu,ehto,vazhno,'?']]]]).
 
-rules([[druzjhja,1],[
+rules([[druzjhja,2],[
 	[1,[_],0,
 		[druzjhja,-,ehto,prekrasno,',',vsegda,nuzhnih,ljudi,rjadom,kak,vashi,druzjhja,otnosjatsja,k,rihbalke,'?']]]]).
 
-rules([[brakonjher,1],[
+rules([[brakonjher,2],[
 	[1,[_],0,
 		[brakonjherih,opasnihe,prestupniki,',',kak,vih,schitaete,'?'],
         [iz-za,brakonjherov,ischezli,mnogie,vidih,zhivotnihkh,',',kak,vih,dumaete,naskoljhko,siljhnihy,ushherb,nanes,chelovek,prirode,'?']]]]).
 
 
-rules([[meditacija,1],[
+rules([[meditacija,2],[
 	[1,[_],0,
 		[vazhno,nayti,svoy,sposob,relaksa,',',tak,kak,vihsokiy,temp,zhizni,sposobstvuet,nervoznosti,kak,vih,schitaete,aktivnihy,otdihkh,na,prirode,sposobstvuet,rasslableniju,'?',pochemu,'?'],
         [yoga,i,meditacija,ehto,ochenjh,zdorovo,',',planiruju,zanjatjhsja,ehtim,v,budushhem,',',a,vih,chto,dumaete,ob,ehtom,'?']]]]).
 
-rules([[kleshhi,1],[
+rules([[kleshhi,2],[
 	[1,[_],0,
 		[kleshhi,opasnihe,parazitih,',',obitajushhie,v,trave,',',kak,obezopasitjh,sebja,ot,nikh,'?']]]]).
 
-rules([[piknik,1],[
+rules([[piknik,3],[
 	[1,[_],0,
 	[ja,ljublju,pikniki,',',osobenno,v,mae,',',shashlihki,',',igrih,',',druzjhja,',',leto,vih,kak,k,ehtomu,otnositesjh,'?'],
     [poslednee,vremja,v,lesu,postojanno,obnaruzhivaju,ostavlennihe,butihlki,i,prochee,kak,vih,dumaete,po,ehtomu,povodu,'?']]]]).
 
-rules([[magazin,1],[
+rules([[magazin,2],[
 	[1,[_],0,
 		[u,menja,estjh,ljubimihy,magazin,v,moey,derevne,nazihvaetsja,nakhodka,tam,prodajut,vse,vidih,snastey,ot,malo,do,velika,vopros,v,tom,',',chto,mnogie,rihbolovih,predpochitajut,zavodskim,snastjam,sdelannihe,sobstvennoruchno,kak,dumaete,oni,delajut,ehto,iz,chuvstv,nostaljhgii,ili,po,kakim-to,svoim,soobrazhenijam,'?']]]]).
 
-rules([[snasti,1],[
+rules([[snasti,2],[
 	[1,[_],0,
 		[ja,khochu,skazatjh,',',chto,v,poslednie,20,let,pojavilasjh,uyma,vidov,snastey,raznihkh,vidov,vot,vih,',',k,primeru,',',o,kakikh,slihshali,',',mozhet,bihtjh,slihshali,ili,chto,vih,voobshhe,znaete,o,snastjakh,'?']]]]).
 
-rules([[nauchilsja,1],[
+rules([[nauchilsja,2],[
 	[1,[_],0,
 		[ja,nauchilsja,rihbachitjh,blagodarja,moemu,ljubimomu,dedushku,',',a,vash,dedushka,uchil,vas,rihbachitjh,'?',rasskazhite,'?'],
         [ne,vsjak,rihbak,',',kto,raz,rihbu,poymal,',',chem,otlichaetsja,rihbak,ot,ne,rihbaka,po,vashemu,mneniju,'?',vsjakiy,li,chelovek,javljaetsja,rihbakom,po,pravu,rozhdenija,'?',kak,vih,ponimaete,poslovicu,'?']]]]).
 
-rules([[lovkostjh,1],[
+rules([[lovkostjh,3],[
 	[1,[_],0,
 		[dlja,menja,uchitsja,rihbalke,bihlo,srodni,uchebe,programmirovaniju,',',bihlo,veselo,',',radostno,',',ja,dazhe,poymal,okunja,"(",ili,napisal,programmu,")"],
         [dlja,vas,process,obuchenija,bihl,takim,zhe,prijatnihm,'?']]]]).
 
-rules([[otpustitjh,1],[
+rules([[otpustitjh,2],[
 	[1,[_],0,
 		[mnogie,"(",v,tom,chisle,i,ja,")",ljubjat,rihbalku,chisto,iz,sportivnogo,interesa,i,otpuskajut,rihbu,obratno,v,vodu,a,dlja,vas,rihbalka,"—",ehto,chto,'?']]]]).
 
 
-rules([[vodoem,10],[
+rules([[vodoem,3],[
 	[1,[_],0,
 		[khoroshiy,rihbak,dolzhen,po,klevu,znatjh,',',kak,rihbu,zvatjh,kak,vih,dumaete,ot,vodoema,ili,chego,voobshhe,zavisit,khoroshiy,klev,'?',ili,zhe,delo,toljhko,v,rihbake],
         [kakoy,vodoem,dolzhen,bihtjh,',',chtobih,klev,bihl,khoroshim,'?']]]]).
 
 
-rules([[poterjatjhsja,1],[
+rules([[poterjatjhsja,3],[
 	[1,[_],0,
 		[chto,neobkhodimo,sdelatjh,v,pervuju,ocheredjh,esli,vih,poterjalisjh,v,lesu,'?'],
         [skazhite,',',chto,na,vash,vzgljad,nuzhno,imetjh,bagazhe,znaniy,chtobih,ne,poterjatjhsja,v,poterjatjhsja,v,lesu]]]]).
 
-rules([[lekarstva,6],[
+rules([[lekarstva,2],[
 	[1,[_],0,
 		[v,lesu,polno,opasnostey,',',osobenno,esli,les,dzhungli,vazhno,sdelatjh,privivki,zaranee,i,vzjatjh,s,soboy,kak,vih,dumaete,kakie,lekarstva,prigodjatsja,',',naprimer,',',v,pokhode,'?']]]]).
 
-rules([[sorvalasjh,1],[
+rules([[sorvalasjh,2],[
 	[1,[_],0,
 		[kak,govoritsja,rihbak,dushu,ne,morit,rihbih,net,',',tak,chay,varit,ochenjh,vazhno,nauchitjhsja,podsekatjh,rihbu,',',chtob,ne,uplihla]]]]).
 
-rules([[ehkologija,1],[
+rules([[ehkologija,2],[
 	[1,[_],0,
 		[v,21,veke,obstanovka,s,musorom,deystviteljhno,stanovitsja,katastroficheskoy,',',chto,po,vashemu,mneniju,nuzhno,predprinjatjh,',',chtobih,izbezhatjh,tragedii,'?']]]]).
 
 
-rules([[musor,1],[
+rules([[musor,3],[
 	[1,[_],0,
 		[v,atlanticheskom,okeane,uzhe,pojavilsja,celihy,musornihy,kontinent,razmerom,s,franciju,',',a,musor,v,vode,',',kak,izvestno,ne,razlagaetsja,ehto,deystviteljhno,pechaljhno,kak,vih,schitaete,'?'],
         [kachestvennaja,pererabotka,musora,ehto,uzhe,tekhnologii,nashego,i,budushhego,vremeni,inache,reki,i,ozera,stanut,neprigodnih,dlja,zhizni,kak,vih,polagaete,chto,mozhet,pomochjh,ochistitjh,vodoemih,'?']]]]).
 
-rules([[pozhar,1],[
+rules([[pozhar,2],[
 	[1,[_],0,
 		[chto,nuzhno,delatjh,ljudjam,chtobih,predotvratitjh,lesnihe,pozharih,'?']]]]).
 
-rules([[blagotvoriteljhnostjh,1],[
+rules([[blagotvoriteljhnostjh,2],[
 	[1,[_],0,
 		[lichno,ja,schitaju,spravedlivoy,pogovorku,ne,davay,golodajushhemu,rihbu,',',day,emu,udochku,',',pochemu,vih,ne,soglasnih,ili,soglasnih,'?'],
         [pomogatjh,obezdolennihm,ehto,vesjhma,blagorodno,',',vih,kak,to,pomogaete,'?']]]]).
 
-rules([[net,0],[
+rules([[net,1],[
 	[1,[_],0,
 	    [i, dont, got, you]]]]).
 
@@ -840,23 +840,23 @@ rules([[proshhayte,9],[
 	[1,[_],0,
 	    [spasibo, za, dialog, uvidimsja, pozzhe]]]]).
 
-rules([[prosto,0],[
+rules([[prosto,1],[
 	[1,[_],0,
 	    [net, ehto, ne, prostoy, vopros]]]]).
 
-rules([[znaju,0],[
+rules([[znaju,1],[
 	[1,[_],0,
 	    [ladno, a, chto, vih, eshhe, znaete, pro, rihbalku, '?']]]]).
 
-rules([[okey,0],[
+rules([[okey,1],[
 	[1,[_],0,
 	    [khorosho, a, chto, vih, eshhe, znaete, o, rihbalke, '?']]]]).
 
-rules([[malo,0],[
+rules([[malo,1],[
 	[1,[_],0,
 	    [khm, a, davayte, ja, vam, rasskazhu, o, rihbalke, '?', chto, vih, khoteli, bih, uznatjh, '?']]]]).
 
-rules([[ljublju,0],[
+rules([[ljublju,1],[
 	[1,[_],0,
 	    [ot, chego, zhe, '?']]]]).
 
