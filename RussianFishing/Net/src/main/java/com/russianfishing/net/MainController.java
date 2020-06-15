@@ -10,13 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.validation.constraints.NotNull;
-
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Controller
 public class MainController {
 
-    ElizaService service;
+    private final ElizaService service;
 
     @Autowired
     public MainController(ElizaService service) {

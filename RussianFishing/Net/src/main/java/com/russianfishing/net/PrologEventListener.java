@@ -1,16 +1,29 @@
 package com.russianfishing.net;
 
 import com.ugos.jiprolog.engine.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.io.File;
 
+@Repository
 public class PrologEventListener implements JIPEventListener {
     private final PrologProcessor processor;
     private int m_nQueryHandle;
     private final boolean end = false;
+    private final JIPEngine engine;
 
+    @Autowired
     PrologEventListener(PrologProcessor processor) {
         this.processor = processor;
+        engine = new JIPEngine();
+        engine.addEventListener(this);
+        try {
+            File file = new File(getClass().getResource("/prolog/test.pl").getFile());
+            engine.consultFile(file.getAbsolutePath());
+        } catch (JIPSyntaxErrorException ex) {
+            ex.printStackTrace();
+        }
     }
 
     @Override
@@ -30,29 +43,20 @@ public class PrologEventListener implements JIPEventListener {
     }
 
     public synchronized void start(String request) {
-        JIPEngine jip = new JIPEngine();
 
-        jip.addEventListener(this);
-
-        try {
-            File file = new File(getClass().getResource("/prolog/test.pl").getFile());
-            jip.consultFile(file.getAbsolutePath());
-        } catch (JIPSyntaxErrorException ex) {
-            ex.printStackTrace();
-        }
 
         JIPTerm query = null;
 
         try {
             request = TranslateUtils.translateToLatin(request.toLowerCase());
-            query = jip.getTermParser().parseTerm("eliza(\"" + request + "\", X)." );
+            query = engine.getTermParser().parseTerm("eliza(\"" + request + "\", X)." );
         } catch (JIPSyntaxErrorException ex) {
             ex.printStackTrace();
             System.exit(0);
         }
 
-        synchronized (jip) {
-            m_nQueryHandle = jip.openQuery(query);
+        synchronized (engine) {
+            m_nQueryHandle = engine.openQuery(query);
         }
 
         if (!end) {

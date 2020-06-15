@@ -1,5 +1,8 @@
 package com.russianfishing.net;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class PrologProcessor {
 
     private String answer;
