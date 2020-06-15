@@ -14,6 +14,9 @@
         var block = document.getElementById("response");
         block.scrollTop = block.scrollHeight;
     });
+
+    // Execute a function when the user releases a key on the keyboard
+
 </script>
 
 <div class="main">
@@ -28,7 +31,7 @@
                     <input type="text" name="username_message" id="username_message" hidden/>
                     <textarea name="content_message" id="content_message" placeholder="Message content here..."
                               required></textarea>
-                    <button onclick="sendMessage();"><img th:src="@{/images/send.png}" alt=""></button>
+                    <button id="send_message" onclick="sendMessage();"><img th:src="@{/images/send.png}" alt=""></button>
                 </div>
             </div>
         </div>

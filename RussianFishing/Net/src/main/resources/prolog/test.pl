@@ -440,7 +440,6 @@ sr([khodjhba|X],[sport|Y],X,Y).
 sr([beg|X],[sport|Y],X,Y).
 sr([tennis|X],[sport|Y],X,Y).
 sr([velosport|X],[sport|Y],X,Y).
-sr([rihbalka|X],[sport|Y],X,Y).
 sr([badminton|X],[sport|Y],X,Y).
 sr([zozh|X],[sport|Y],X,Y).
 sr([forma|X],[sport|Y],X,Y).
@@ -481,6 +480,9 @@ sr([pauki|X],[strakh|Y],X,Y).
 sr([dikiy|X],[strakh|Y],X,Y).
 sr([ladno|X],[okey|Y],X,Y).
 sr([davay|X],[okey|Y],X,Y).
+sr([da|X],[okey|Y],X,Y).
+
+sr([aga|X],[okey|Y],X,Y).
 sr([ona|X],[on|Y],X,Y).
 sr([ono|X],[on|Y],X,Y).
 sr([nedostatochno|X],[malo|Y],X,Y).
@@ -490,8 +492,17 @@ sr([predpochitaju|X],[ljublju|Y],X,Y).
 sr([normaljhno|X],[ljublju|Y],X,Y).
 sr([plokho|X],[ljublju|Y],X,Y).
 sr([otlichno|X],[ljublju|Y],X,Y).
+sr([otlichnihy|X],[ljublju|Y],X,Y).
+sr([otlichnaja|X],[ljublju|Y],X,Y).
+sr([otlichnoe|X],[ljublju|Y],X,Y).
 sr([super|X],[ljublju|Y],X,Y).
 sr([klassno|X],[ljublju|Y],X,Y).
+sr([klassnihy|X],[ljublju|Y],X,Y).
+sr([klassnaja|X],[ljublju|Y],X,Y).
+sr([superskiy|X],[ljublju|Y],X,Y).
+sr([krutoy|X],[ljublju|Y],X,Y).
+sr([svezhiy|X],[ljublju|Y],X,Y).
+sr([svezhaja|X],[ljublju|Y],X,Y).
 sr([velikolepno|X],[ljublju|Y],X,Y).
 sr([somniteljhno|X],[ljublju|Y],X,Y).
 sr([luchshe|X],[ljublju|Y],X,Y).
@@ -514,8 +525,14 @@ sr([foreljh|X],[rihba|Y],X,Y).
 sr([treska|X],[rihba|Y],X,Y).
 sr([okunjh|X],[rihba|Y],X,Y).
 sr([vkusno|X],[eda|Y],X,Y).
+sr([vkusnoe|X],[eda|Y],X,Y).
+sr([vkusnaja|X],[eda|Y],X,Y).
+sr([vkusnihe|X],[eda|Y],X,Y).
 sr([appetitno|X],[eda|Y],X,Y).
 sr([sochno|X],[eda|Y],X,Y).
+sr([smekalku|X],[sport|Y],X,Y).
+sr([smekalka|X],[lovkostjh|Y],X,Y).
+sr([mjasa|X],[mjaso|Y],X,Y).
 
 
 :- dynamic(rules/1).
@@ -786,7 +803,7 @@ rules([[nauchilsja,2],[
 
 rules([[lovkostjh,3],[
 	[1,[_],0,
-		[dlja,menja,uchitsja,rihbalke,bihlo,srodni,uchebe,programmirovaniju,',',bihlo,veselo,',',radostno,',',ja,dazhe,poymal,okunja,"(",ili,napisal,programmu,")"],
+		[dlja,menja,uchitsja,rihbalke,bihlo,srodni,uchebe,programmirovaniju,bihlo,veselo,radostno,ja,dazhe,poymal,okunja,'(',ili,napisal,programmu, ')'],
         [dlja,vas,process,obuchenija,bihl,takim,zhe,prijatnihm,'?']]]]).
 
 rules([[otpustitjh,2],[
